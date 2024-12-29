@@ -32,19 +32,12 @@ body {
     animation: rotateSun 10s linear infinite; /* Only rotate, no movement */
     transform-origin: center; /* Rotation around its center */
 }
+@media(max-width:480px){
+    .sun{
+        position: absolute;
+        top: 40px;
+        left: 68px;
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .weather-app {
-        width: 80%;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .weather-app {
-        width: 90%;
-        padding: 10px;
     }
 }
 /* Clock styling */
@@ -59,8 +52,20 @@ body {
     border: 0px solid black;
     left: 35px;
     bottom: 250px;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
 }
+@media(max-width:480px){
+    .clock{
+        position: absolute;
+        width: 250px;
+        bottom: 30px;
 
+
+    }
+}
 /* Time text styling */
 #time {
     font-size: 60px;
@@ -84,7 +89,7 @@ body {
 }
 @media(max-width:480px){
     #app{
-        top: 70px;
+        top: 170px;
         width: 55%;
         left: 68px;
 
