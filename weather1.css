@@ -61,7 +61,7 @@ body {
     .clock{
         position: absolute;
         width: 250px;
-        bottom: 30px;
+        bottom: -20px;
 
 
     }
