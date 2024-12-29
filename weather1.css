@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Urbanist:wght@734&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(12, 13, 15) 0%, rgb(66, 43, 61) 90% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Keyframe for rotating the sun around its own center */
+@keyframes rotateSun {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Sun styling */
+.sun {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(182, 158, 0) 0%, rgba(255, 165, 0, 0.6) 70%, rgba(255, 0, 0, 0) 100%);
+    box-shadow: 0 0 30px 10px rgba(255, 223, 0, 0.8);
+    animation: rotateSun 10s linear infinite; /* Only rotate, no movement */
+    transform-origin: center; /* Rotation around its center */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .weather-app {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-app {
+        width: 90%;
+        padding: 10px;
+    }
+}
+/* Clock styling */
+.clock {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px) brightness(1.1);
+    color: #000000;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 7px rgb(0, 0, 0);
+    border: 0px solid black;
+    left: 35px;
+    bottom: 250px;
+}
+
+/* Time text styling */
+#time {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+#app{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px) brightness(1.1);
+    border-radius: 25px;
+    padding: 7px 24px;
+    box-shadow: 0px 4px 14px rgb(0, 0, 0);
+    border: 0px solid black;
+    text-align: center;
+    top: 25px;
+    left: 41%;
+    font-family: "Averia Serif Libre", serif;
+  font-weight: 600;
+  font-size: 30px;
+  font-style: normal;
+}
+@media(max-width:480px){
+    #app{
+        top: 70px;
+        width: 55%;
+        left: 68px;
+
+    }
+}
+.weatherInfo{
+    font-size: 21px;
+}
+.weather-app {
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px) brightness(1.1);
+    width: 350px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgb(0, 0, 0);
+    border: 2px solid black;
+    text-align: center;
+    top: 40px;
+
+}
+/* Media query for devices with max width 768px (e.g., tablets) */
+@media (max-width: 768px) {
+    .weather-app {
+        width: 70%; /* Make the app take 80% of the width */
+        padding: 15px; /* Reduce padding */
+    }
+}
+
+/* Media query for devices with max width 480px (e.g., mobile devices) */
+@media (max-width: 480px) {
+    .weather-app {
+        width: 80%; /* Make the app take 90% of the width */
+        padding: 10px; /* Further reduce padding */
+    }
+}
+.weather-app input {
+    background: rgba(45, 37, 37, 0.2);
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.weather-app button {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-app img {
+    width: 100px;
+    margin: 15px 0;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.weather-description {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.details div {
+    text-align: center;
+}
+
+.details img {
+    width: 25px;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
