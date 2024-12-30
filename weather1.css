@@ -73,12 +73,13 @@ body {
 }
 #app{
     position: absolute;
-    background: rgba(0, 0, 0, 0.1);
+    color: rgb(122, 122, 122);
+    background: rgba(18, 17, 17, 0.347);
     backdrop-filter: blur(10px) brightness(1.1);
     border-radius: 25px;
     padding: 7px 24px;
     box-shadow: 0px 4px 14px rgb(0, 0, 0);
-    border: 0px solid black;
+    border: 0.1px solid rgb(0, 0, 0);
     text-align: center;
     top: 25px;
     left: 41%;
