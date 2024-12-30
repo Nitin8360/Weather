@@ -60,12 +60,12 @@ body {
 @media(min-width:380px){
     .clock{
         display: grid;
-        grid-template-rows: 40px auto 0px 30px;
-        grid-template-columns: 160 auto auto;
-        /* position: absolute; */
+        /* grid-template-rows: 40px auto 0px 30px; */
+        /* grid-template-columns: 160 auto auto; */
+        position: fixed;
         left: 28px;
         width: 250px;
-        bottom: 30px;
+        bottom: 10px;
 
 
     }
