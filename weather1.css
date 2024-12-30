@@ -57,12 +57,15 @@ body {
     font-size: 30px;
     font-style: normal;
 }
-@media(max-width:480px){
+@media(min-width:380px){
     .clock{
-        position: absolute;
+        display: grid;
+        grid-template-rows: 40px auto 0px 30px;
+        grid-template-columns: 160 auto auto;
+        /* position: absolute; */
         left: 28px;
         width: 250px;
-        bottom: -20px;
+        bottom: 30px;
 
 
     }
