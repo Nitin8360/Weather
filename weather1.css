@@ -60,6 +60,7 @@ body {
 @media(max-width:480px){
     .clock{
         position: absolute;
+        left: 30px;
         width: 250px;
         bottom: -20px;
 
