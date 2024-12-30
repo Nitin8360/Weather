@@ -62,18 +62,23 @@ body {
         display: grid;
         /* grid-template-rows: 40px auto 0px 30px; */
         /* grid-template-columns: 160 auto auto; */
-        position: fixed;
-        left: 28px;
-        width: 250px;
-        bottom: 10px;
-
-
+        position: absolute;
+        left: 88px;
+        width: 180px;
+        padding: 10px 15px;
+        bottom: 15px;
     }
 }
 /* Time text styling */
 #time {
     font-size: 60px;
     letter-spacing: 2px;
+}
+@media(min-width:380px){
+    #time{
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
 }
 #app{
     position: absolute;
@@ -94,9 +99,10 @@ body {
 }
 @media(max-width:480px){
     #app{
-        top: 157px;
-        width: 55%;
-        left: 68px;
+        position: absolute;
+        top: 153px;
+        width: 235px;
+        left: 53px;
 
     }
 }
